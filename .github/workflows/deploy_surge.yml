@@ -2,13 +2,13 @@ name: Deploy to Surge
 
 # Déclenche le déploiement à chaque push sur la branche main
 on:
-  workflow_dispatch:
   push:
-    branches: "main"
+    branches: 'main'
+  workflow_dispatch:
 
 # N'autorise un seul déploiement à la fois
 concurrency:
-  group: "surge"
+  group: 'surge'
   cancel-in-progress: true
 
 jobs:
