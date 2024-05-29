@@ -4,7 +4,6 @@ name: Deploy to Surge
 on:
   push:
     branches: 'main'
-  workflow_dispatch:
 
 # N'autorise un seul déploiement à la fois
 concurrency:
